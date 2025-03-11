@@ -1,0 +1,1 @@
+println!("{}",char1.unwrap());
