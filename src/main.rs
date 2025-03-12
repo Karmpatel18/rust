@@ -1,13 +1,12 @@
 fn main() {
-    println!("Hello, world!");
-    let greeting = String::from("Hello");
-    println!("{}", greeting);
-
-    let char1 = greeting.chars().nth(3);
-    match char1 {
-        Some(c) => println!("{}",c),
-        None => println!("none"), 
-        
-    }
-    // println!("{}",char1.unwrap());
+    // for i in 0..10 {
+    //     print!("{}", i);
+    // }
+    // print!("\n");
+    // let a = do_sum(10, 20);
+    // println!("{}", a);
 }
+
+// fn do_sum(a: i32, b: i32) -> i32 {
+//     return a+b;
+// }
