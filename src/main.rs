@@ -1,31 +1,15 @@
-fn main() {
-    
-
-    stack_fn();
-    heap_fn();
-    stringupdate_fn();
-
-
-
+struct User {
+    username: String,
+    email: String,
+    sign_in_count: u64,
+    active: bool,
 }
-
-fn stack_fn(){
-    let x = 10;
-    let y = 12;
-    let z = x + y;
-    println!("{}",z);
+fn main(){
+    let user = User {
+        username: String::from("someusername123"),
+        email: String::from("s9xHx@example.com"),   
+        sign_in_count: 1,
+        active: true
+    };
+    println!("{}",user.username);
 }
-fn heap_fn(){
-    let s1 = String::from("hello");
-    let s2 = String::from("world");
-    // println!("{} {}",s1,s2);
-    let z = format!("{} {}",s1,s2);
-    println!("{}",z);
-}
-
-fn stringupdate_fn(){
-    let mut string = String::from("hello world");
-    println!("{}",string);
-    string.push_str("after updatation");
-}
-
